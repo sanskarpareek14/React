@@ -1,12 +1,10 @@
-function App() {
+import Navbar from './Navbar'
+
+const App = () => {
   return (
     <div className="App">
+      <Navbar />
       Lorem Ipsum is simply dummy text
-      <h4>I m h4</h4>
-      <h4>I m h4</h4>
-      <h4>I m h4</h4>
-      <h4>I m h4</h4>
-      <h4>I m h4</h4>
     </div>
   );
 }
