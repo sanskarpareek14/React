@@ -1,11 +1,14 @@
+import ListItem from './ListItem'
+
 const Content = () => {
     const chores = ["item 1", "item 2", "item 3", "item 4"]
     return (
         <div class="container">
             <ul>
                 {
-                    chores.map(chore => <li>{chore}</li>)
+                    chores.map(chore => <ListItem chore={chore} />)
                 }
+
             </ul>
         </div>
     );
