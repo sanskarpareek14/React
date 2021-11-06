@@ -5,7 +5,7 @@ const Navbar = () => {
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
-    )
+    );
 }
 
-export default Navbar
+export default Navbar;
