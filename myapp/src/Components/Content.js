@@ -4,23 +4,25 @@ const Content = () => {
     const [value, setValue] = useState('')
 
     const handleSubmit = () => {
-        setItems(prev => [...prev,])
+        setItems(prev => [...prev, value])
+        setValue('')
     }
     const handleInput = (e) => {
         setValue(e.target.value)
     }
-    console.log(value)
+    const handleDelete = (item) => {
+        console.log(item)
+        setItems(prev => prev.filter(i => i !== item))
+    }
     return (
         <>
             <h2>Todo</h2>
-            <form>
-                <input onChange={handleInput} type="text" />
-                <button type="submit">Add</button>
-            </form>
+            <input value={value} onChange={handleInput} type="text" />
+            <button onClick={handleSubmit} type="submit">Add</button>
             <ul>
-                {items.map(item => <li>item</li>)}
+                {items.map(item => <li>{item} <button onClick={() => { handleDelete(item) }}>Delete</button></li>)}
             </ul>
         </>
-    )
+    );
 }
-export default Content
+export default Content;
