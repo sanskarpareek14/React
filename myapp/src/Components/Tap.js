@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Calculator from './Calculator'
 
 const Tap = () => {
     useEffect(() => {
@@ -13,6 +14,7 @@ const Tap = () => {
                 <h2>{count}</h2>
                 <button onClick={() => setCount(prev => prev + 1)}>Click</button>
             </div>
+            <Calculator />
         </div>
     );
 }
