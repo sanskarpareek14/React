@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 const Timer = () => {
     return (
         <div className="container">
