@@ -1,11 +1,8 @@
-import Description from './Components/Description'
-import DescriptionTwo from './Components/DescriptionTwo'
+import One from './Components/One'
 const App = () => {
-  console.log(Description)
   return (
     <div>
-      <Description private={false} />
-      {/* <DescriptionTwo /> */}
+      <One />
     </div >
   );
 }
