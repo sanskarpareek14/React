@@ -1,9 +1,9 @@
 import Two from './Two'
-const One = () => {
+const One = ({ data }) => {
     return (
         <div>
             <h1>I'm component one</h1>
-            <Two />
+            <Two data={data} />
         </div>
     )
 }
